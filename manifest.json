@@ -1,0 +1,19 @@
+{
+	"name": "Focus :: Noise",
+	"description": "A Chrome Extension that generates noise",
+	"version": "0.0.1",
+
+	"permissions": [],
+
+	"browser_action": {
+		"default_title": "Noise",
+		"default_icon": "noise.png",
+		"default_popup": "popup.html"
+	},
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"manifest_version": 2
+}
