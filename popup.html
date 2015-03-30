@@ -1,13 +1,21 @@
 <html data-ng-app="noiseApp" data-ng-csp="">
 <head>
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css">
+	<link rel="stylesheet" type="text/css" href="noise.css">
 </head>
 <body>
 <script src="bower_components/angularjs/angular.min.js"></script>
-<script src="noise.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
 <script src="app.js"></script>
-<script src="background.js"></script>
 <div ng-controller="NoiseCtrl">
-<button ng-click="startBrownNoise()">Click For Brown</button>
+	<div class="button-holder">
+		<md-button class="md-primary md-raised" ng-click="startBrownNoise()"></md-button>
+		<md-button class="md-accent md-raised" ng-click="startPinkNoise()"></md-button>
+		<md-button class="md-warn md-raised" ng-click="startWhiteNoise()"></md-button>
+	</div>
+	<!--<button ng-click="stopNoise()">Stop</button>-->
 </div>
 </body>
 </html>

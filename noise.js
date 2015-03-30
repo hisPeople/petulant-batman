@@ -7,7 +7,7 @@
 			for (var i = 0; i < bufferSize; i++) {
 				output[i] = Math.random() * 2 - 1;
 			}
-		}
+		};
 		return node;
 	};
 
@@ -30,12 +30,11 @@
 				output[i] *= 0.11; // (roughly) compensate for gain
 				b6 = white * 0.115926;
 			}
-		}
+		};
 		return node;
 	};
 
 	AudioContext.prototype.createBrownNoise = function(bufferSize) {
-		console.log('brown noise');
 		bufferSize = bufferSize || 4096;
 		var lastOut = 0.0;
 		var node = this.createScriptProcessor(bufferSize, 1, 1);
@@ -47,7 +46,7 @@
 				lastOut = output[i];
 				output[i] *= 3.5; // (roughly) compensate for gain
 			}
-		}
+		};
 		return node;
 	};
-})(window.AudioContext || window.webkitAudioContext);
+})(window.AudioContext);

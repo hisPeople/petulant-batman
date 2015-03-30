@@ -12,8 +12,8 @@
 	},
 
 	"background": {
-		"scripts": ["background.js"]
-	},
+		"scripts": ["noise.js", "background.js"]
+    },
 
 	"manifest_version": 2
 }
